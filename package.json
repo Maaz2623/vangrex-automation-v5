@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "bot": "bun  run ./src/index.ts",
+    "tree-fetcher": "bun --env-file=.env run ./src/ui-tree-fetcher.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
