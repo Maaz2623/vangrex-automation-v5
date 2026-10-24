@@ -49,6 +49,8 @@ bot.on("message:text", async (ctx) => {
     });
 
     await ctx.reply(result.text);
+
+    console.log("Total Tokens Used: ", result.usage.totalTokens);
   } catch (error) {
     console.error("Click command error: ", error);
 

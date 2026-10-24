@@ -1,0 +1,259 @@
+Window|vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code (focused)
+Pane|N/A
+Pane|vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code
+Pane|N/A
+Pane|N/A
+Pane|N/A
+Button|Minimize
+Button|Restore
+Button|Close
+Pane|N/A
+Pane|N/A
+Pane|N/A
+Pane|N/A
+Document|vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code
+Group|N/A
+Pane|N/A
+Group|N/A
+Group|N/A
+Group|N/A
+MenuBar|N/A
+MenuItem|File
+MenuItem|Edit
+MenuItem|Selection
+MenuItem|View
+MenuItem|Go
+MenuItem|Run
+MenuItem|More
+ToolBar|N/A
+Button|Go Back
+Button|Go Forward
+ToolBar|Agent Status
+Button|Open Quick Access
+Group|N/A
+Button|Toggle Chat
+Button|Toggle Chat
+Group|N/A
+Group|N/A
+Button|More Actions
+ToolBar|N/A
+Button|Open in Agents Window
+ToolBar|Title actions
+Button|Customize Layout...
+Button|Toggle Primary Side Bar
+Text|
+Button|Toggle Panel
+Text|
+Button|Toggle Secondary Side Bar
+Text|
+Group|N/A
+Group|N/A
+Group|N/A
+Tab|Active View Switcher
+TabItem|Explorer
+Group|Explorer
+TabItem|Search
+Group|Search
+TabItem|Source Control - 7 pending changes
+Group|Source Control - 7 pending changes
+Group|Source Control - 7 pending changes
+TabItem|Run and Debug
+Group|Run and Debug
+TabItem|Extensions
+Group|Extensions
+TabItem|Vercel
+Group|Vercel
+TabItem|Vercel Deployment
+Group|Vercel Deployment
+TabItem|Python
+Group|Python
+TabItem|Thunder Client
+Group|Thunder Client
+ToolBar|Manage
+Button|Accounts - Sign in to Sync Settings
+Group|Accounts - Sign in to Sync Settings
+Group|Accounts - Sign in to Sync Settings
+Text|1
+Button|Manage
+Group|Manage
+Text|
+Text|Thunder Client
+ToolBar|Thunder Client actions
+Button|Reload Data
+Group|N/A
+Group|N/A
+Button|Views and More Actions...
+ToolBar|N/A
+Document|N/A
+Group|N/A
+Group|N/A
+Group|N/A
+Tab|N/A
+TabItem|vscode.agent.ts
+Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|vangrex.agent.ts
+Group|D:\projects\vangrex-automation-v5\src\agents\vangrex.agent.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|index.ts
+Group|D:\projects\vangrex-automation-v5\src\index.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|ui-tree.tool.ts
+Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts • Untracked
+ToolBar|Tab actions
+Button|Close
+ToolBar|Editor actions
+Button|Open Changes
+Button|Split Editor Right [Alt] Split Editor Down
+Group|N/A
+Group|N/A
+Button|More Actions...
+Text|
+List|N/A
+ListItem|src
+Group|D:\projects\vangrex-automation-v5\src • Contains emphasized items
+Text|src
+Text|
+ListItem|agents
+Group|D:\projects\vangrex-automation-v5\src\agents • Contains emphasized items
+Text|agents
+Text|
+ListItem|vscode.agent.ts
+Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+Text|N/A
+Text|vscode.agent.ts
+Text|
+ListItem|instructions
+Text|
+Group|instructions (variable)
+Text|instructions
+Group|vscode.agent.ts
+Text|N/A
+Edit|The editor is not accessible at this time. To enable screen reader optimized mode, use Shift+Alt+F1
+List|Show Code Actions
+Text|
+Tab|Active View Switcher
+TabItem|Problems
+Group|Problems
+TabItem|Output
+Group|Output
+TabItem|Debug Console
+Group|Debug Console
+TabItem|Terminal
+Group|Terminal
+TabItem|Ports
+Group|Ports
+ToolBar|Terminal actions
+Button|Focus Terminal [Alt] Split Terminal
+Button|New Terminal [Alt] Split Terminal
+Button|New Terminal [Alt] Split Terminal
+Group|N/A
+Group|N/A
+Button|Launch Profile...
+Button|Split Terminal
+Button|Kill Terminal
+Group|N/A
+Group|N/A
+Button|Views and More Actions...
+Group|N/A
+ToolBar|N/A
+Button|Maximize Panel
+Text|
+Button|Hide Panel
+Group|N/A
+Group|N/A
+Group|N/A
+Group|N/A
+Image|N/A
+Group|N/A
+Edit|Terminal 1, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
+Image|N/A
+Image|N/A
+StatusBar|N/A
+Text|41 x 12
+Group|N/A
+Image|N/A
+Group|N/A
+Edit|Terminal 2, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
+Group|N/A
+Text|
+Text|
+Image|N/A
+Image|N/A
+Group|N/A
+Group|N/A
+Group|N/A
+Edit|Terminal input
+Image|N/A
+Image|N/A
+StatusBar|N/A
+Text|41 x 12
+List|Terminal tabs
+ListItem|Terminal 1 bun, split 1 of 2
+Group|┌ $(terminal) bun
+Text|┌
+Text|
+Text|bun
+ListItem|Terminal 2 bun, split 2 of 2
+Group|└ $(terminal) bun
+Text|└
+Text|
+Text|bun
+StatusBar|N/A
+Group|remote
+Button|remote
+Group|vangrex-automation-v5 (Git) - main*, Checkout Branch/Tag...
+Button|vangrex-automation-v5 (Git) - main*, Checkout Branch/Tag...
+Group|vangrex-automation-v5 (Git) - Synchronize Changes
+Button|vangrex-automation-v5 (Git) - Synchronize Changes
+Group|No Problems
+Button|No Problems
+Group|Notifications
+Button|Notifications
+Group|check Prettier
+Button|check Prettier
+Group|Copilot status
+Button|Copilot status
+Group|TypeScript
+Button|TypeScript
+Group|Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier
+Button|Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier
+Group|CRLF
+Button|CRLF
+Group|UTF-8
+Button|UTF-8
+Group|Spaces: 2
+Button|Spaces: 2
+Group|Ln 8, Col 365
+Button|Ln 8, Col 365
+Text|N/A
+Text|Error: Please login to use Thunder Client.
+Text|N/A
+Group|N/A
+Text|Cursor added: line 13 column 22
+Group|N/A
+Group|N/A
+Document|N/A
+Document|N/A
+Document|Thunder Client
+Document|Http Buddy
+Document|N/A
+Button|New Request
+Button|Menu
+Group|N/A
+List|N/A
+ListItem|Activity
+ListItem|Collections
+ListItem|Env
+List|N/A
+ListItem|Welcome to Thunder ClientCreate a free account to get started, or log in if you already have one.Log InCreate Free Account
+Edit|filter activity
+Group|N/A
+Text|Welcome to Thunder Client
+Text|Create a free account to get started, or log in if you already have one.
+Text|Log In
+Hyperlink|Create Free Account
+Pane|N/A
