@@ -1,6 +1,6 @@
 import { tool } from "ai";
 import z from "zod";
-import { clickAtBounds } from "../utils/mouse";
+import { clickAtBounds, hoverAtBounds } from "../utils/mouse";
 
 export const clickAtBoundsTool = tool({
   description: "Use to click on elements",
@@ -24,6 +24,33 @@ export const clickAtBoundsTool = tool({
       return {
         success: true,
         message: "Clicked",
+      };
+    } catch (error) {
+      return {
+        success: false,
+        message:
+          error instanceof Error ? error.message : "Something went wrong.",
+      };
+    }
+  },
+});
+
+export const hoverAtBoundsTool = tool({
+  description: "Hover at the element bounds",
+  inputSchema: z.object({
+    name: z.string().describe("The name of the element."),
+    role: z.string().describe("The role of the element."),
+  }),
+  execute: async ({ name, role }) => {
+    try {
+      await hoverAtBounds({
+        name,
+        role,
+      });
+
+      return {
+        success: true,
+        message: "Hovered",
       };
     } catch (error) {
       return {

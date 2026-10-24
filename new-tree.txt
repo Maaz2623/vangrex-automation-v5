@@ -54,9 +54,9 @@ TabItem|Explorer
 Group|Explorer
 TabItem|Search
 Group|Search
-TabItem|Source Control - 6 pending changes
-Group|Source Control - 6 pending changes
-Group|Source Control - 6 pending changes
+TabItem|Source Control - 5 pending changes
+Group|Source Control - 5 pending changes
+Group|Source Control - 5 pending changes
 TabItem|Run and Debug
 Group|Run and Debug
 TabItem|Extensions
@@ -67,8 +67,6 @@ TabItem|Vercel Deployment
 Group|Vercel Deployment
 TabItem|Python
 Group|Python
-TabItem|Thunder Client
-Group|Thunder Client
 ToolBar|Manage
 Button|Accounts - Sign in to Sync Settings
 Group|Accounts - Sign in to Sync Settings
@@ -77,67 +75,64 @@ Text|1
 Button|Manage
 Group|Manage
 Text|
-Text|Explorer
-ToolBar|Extensions: Marketplace actions
+Text|Source Control
+ToolBar|Source Control actions
 Group|N/A
 Group|N/A
 Button|Views and More Actions...
 ToolBar|N/A
 Group|N/A
-Group|N/A
-Button|Explorer Section: vangrex-automation-v5
-Text|Explorer Section: vangrex-automation-v5
-Tree|Files Explorer
-TreeItem|node_modules
-Group|D:\projects\vangrex-automation-v5\node_modules
-TreeItem|src
-Group|D:\projects\vangrex-automation-v5\src • Contains emphasized items
-TreeItem|agents
-Group|D:\projects\vangrex-automation-v5\src\agents • Contains emphasized items
-TreeItem|vangrex.agent.ts
-Group|D:\projects\vangrex-automation-v5\src\agents\vangrex.agent.ts • Modified
-TreeItem|vscode.agent.ts
-Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
-TreeItem|tools
-Group|D:\projects\vangrex-automation-v5\src\tools • Contains emphasized items
-TreeItem|keyboard.tools.ts
-Group|D:\projects\vangrex-automation-v5\src\tools\keyboard.tools.ts • Untracked
-TreeItem|mouse.tools.ts
-Group|D:\projects\vangrex-automation-v5\src\tools\mouse.tools.ts
-TreeItem|ui-tree.tool.ts
-Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts
-TreeItem|utils
-Group|D:\projects\vangrex-automation-v5\src\utils • Contains emphasized items
-TreeItem|desktop.ts
-Group|D:\projects\vangrex-automation-v5\src\utils\desktop.ts
-TreeItem|keyboard.ts
-Group|D:\projects\vangrex-automation-v5\src\utils\keyboard.ts • Untracked
-TreeItem|mouse.ts
-Group|D:\projects\vangrex-automation-v5\src\utils\mouse.ts
-TreeItem|tree-filter.ts
-Group|D:\projects\vangrex-automation-v5\src\utils\tree-filter.ts • Modified
-TreeItem|index.ts
-Group|D:\projects\vangrex-automation-v5\src\index.ts
-TreeItem|model.ts
-Group|D:\projects\vangrex-automation-v5\src\model.ts
-TreeItem|ui-tree-fetcher.ts
-Group|D:\projects\vangrex-automation-v5\src\ui-tree-fetcher.ts
-TreeItem|.env
-Group|D:\projects\vangrex-automation-v5\.env
-TreeItem|.gitignore
-Group|D:\projects\vangrex-automation-v5\.gitignore
-TreeItem|bun.lock
-Group|D:\projects\vangrex-automation-v5\bun.lock
-TreeItem|new-tree.txt
+Button|Changes Section
+Text|Changes
+Tree|Source Control Management
+TreeItem|Source Control Input
+Text|N/A
+Edit|The editor is not accessible at this time. To enable screen reader optimized mode, use Shift+Alt+F1
+ToolBar|N/A
+Button|Generate Commit Message
+TreeItem|$(check) Commit
+Button|Commit Changes on "main"
+Button|More Actions...
+TreeItem|Changes
+TreeItem|new-tree.txt, Modified
 Group|D:\projects\vangrex-automation-v5\new-tree.txt • Modified
-TreeItem|package.json
-Group|D:\projects\vangrex-automation-v5\package.json
-TreeItem|README.md
-Group|D:\projects\vangrex-automation-v5\README.md
-Button|Outline Section
-Text|Outline
-Button|Timeline Section
-Text|Timeline
+TreeItem|test.ts, Untracked
+Group|D:\projects\vangrex-automation-v5\test.ts • Untracked
+TreeItem|vscode.agent.ts, Modified, src\agents
+Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+TreeItem|mouse.tools.ts, Modified, src\tools
+Group|D:\projects\vangrex-automation-v5\src\tools\mouse.tools.ts • Modified
+TreeItem|mouse.ts, Modified, src\utils
+Group|D:\projects\vangrex-automation-v5\src\utils\mouse.ts • Modified
+Button|Graph Section
+Text|Graph
+Group|N/A
+ToolBar|Graph actions
+Button|main, origin/main
+Button|Go to Current History Item
+Button|Fetch From All Remotes
+Button|Pull
+Button|Push
+Button|Refresh
+Group|N/A
+Group|N/A
+Button|More Actions...
+Tree|Source Control History
+TreeItem|Enhance Vangrex automation: update agent instructions, add typeText tool, and improve tree filtering logging, Mohammed Maaz
+Image|N/A
+Group|N/A
+TreeItem|new file: new-tree.txt modified: src/agents/vangrex.agent.ts modified: src/agents/vscode.agent.ts modified: src/index.ts new file: src/tools/mouse.tools.ts new file: src/tools/ui-tree.tool.ts new file: src/utils/tree-filter.ts, Mohammed Maaz
+Image|N/A
+Group|N/A
+TreeItem|Add UI tree fetching functionality and update scripts in package.json, Mohammed Maaz
+Image|N/A
+Group|N/A
+TreeItem|Add new dependencies and enhance vscode automation capabilities - Updated bun.lock and package.json to include new dependencies: @mediar-ai/terminator, robotjs, and zod. - Implemented vscodeAgentTool for automating VSCode tasks. - Enhanced vangrexAgent instructions for clarity. - Removed unused bot.ts file. - Introduced desktop and mouse utility functions for improved interaction., Mohammed Maaz
+Image|N/A
+Group|N/A
+TreeItem|new file: .gitignore new file: README.md new file: bun.lock new file: package.json new file: src/agents/vangrex.agent.ts new file: src/bot.ts new file: src/index.ts new file: src/model.ts new file: tsconfig.json, Mohammed Maaz
+Image|N/A
+Group|N/A
 Group|N/A
 Group|N/A
 Group|Editor Group 1 (empty)
@@ -184,10 +179,7 @@ Text|41 x 12
 Group|N/A
 Image|N/A
 Group|N/A
-Edit|Terminal 2, powershell Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
-Group|N/A
-Text|
-Text|
+Edit|Terminal 2, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
 Image|N/A
 Image|N/A
 Group|N/A
@@ -204,11 +196,11 @@ Group|┌ $(terminal) bun
 Text|┌
 Text|
 Text|bun
-ListItem|Terminal 2 powershell, split 2 of 2
-Group|└ $(terminal) powershell
+ListItem|Terminal 2 bun, split 2 of 2
+Group|└ $(terminal) bun
 Text|└
 Text|
-Text|powershell
+Text|bun
 StatusBar|N/A
 Group|remote
 Button|remote
@@ -220,14 +212,23 @@ Group|No Problems
 Button|No Problems
 Group|Notifications
 Button|Notifications
-Group|check Prettier
-Button|check Prettier
 Group|Copilot status
 Button|Copilot status
 Text|N/A
-Text|ms: number, , , hint
+Text|Error: The name **temp.** is not valid as a file or folder name. Please choose a different name.
 Text|N/A
 Group|N/A
-Text|Cursor added: line 10 column 47
+Text|Cursor added: line 10 column 19
 Group|N/A
+Group|N/A
+Menu|N/A
+MenuItem|Commit
+Group|Commit
+MenuItem|Commit (Amend)
+Group|Commit (Amend)
+Group|N/A
+MenuItem|Commit & Push
+Group|Commit & Push
+MenuItem|Commit & Sync
+Group|Commit & Sync
 Pane|N/A

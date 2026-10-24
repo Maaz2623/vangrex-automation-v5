@@ -8,12 +8,15 @@ import {
 } from "ai";
 import { geminiModel } from "../model";
 import z from "zod";
-import { clickAtBoundsTool } from "../tools/mouse.tools";
+import { clickAtBoundsTool, hoverAtBoundsTool } from "../tools/mouse.tools";
 import { selectElementFromUiTree } from "../tools/ui-tree.tool";
 import { typeTextTool } from "../tools/keyboard.tools";
 
 const instructions = `
 You are Vangrex's VS Code desktop operator.
+
+Procedures:
+- To create a file or folder, hover over explorer section followed by dir name and a new elements about new file and stuff will appear in tree click it precisely. Then click the either options.
 
 Rules:
 - Complete the user's task using the fewest tool calls.
@@ -37,6 +40,7 @@ const vscodeAgent = new ToolLoopAgent({
     clickAtBoundsTool,
     selectElementFromUiTree,
     typeTextTool,
+    hoverAtBoundsTool,
   },
 
   // Prevent an unbounded sequence of actions.
@@ -44,6 +48,7 @@ const vscodeAgent = new ToolLoopAgent({
 
   prepareStep: async ({ messages }) => {
     await delay(1000);
+    console.log(messages);
   },
 });
 

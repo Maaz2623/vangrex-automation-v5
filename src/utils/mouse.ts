@@ -28,3 +28,25 @@ export const clickAtBounds = async ({
 
   robot.mouseClick(clickType, double);
 };
+
+export const hoverAtBounds = async ({
+  role,
+  name,
+}: {
+  role: string;
+  name: string;
+}) => {
+  const selector = `role:${role}|name:${name}`;
+
+  const element = await desktop.locator(selector).first(100);
+
+  const { x, y, width, height } = element.bounds();
+
+  const xPercentage = 50;
+  const yPercentage = 50;
+
+  const targetX = Math.round(x + (width * xPercentage) / 100);
+  const targetY = Math.round(y + (height * yPercentage) / 100);
+
+  robot.moveMouseSmooth(targetX, targetY, -1);
+};
