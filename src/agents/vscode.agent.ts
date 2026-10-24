@@ -1,40 +1,73 @@
-import { tool, ToolLoopAgent } from "ai";
+import {
+  tool,
+  ToolLoopAgent,
+  toolSearch,
+  stepCountIs,
+  pruneMessages,
+  type ModelMessage,
+} from "ai";
 import { geminiModel } from "../model";
 import z from "zod";
-import { clickAtBounds } from "../utils/mouse";
 import { clickAtBoundsTool } from "../tools/mouse.tools";
 import { selectElementFromUiTree } from "../tools/ui-tree.tool";
+import { typeTextTool } from "../tools/keyboard.tools";
 
-const instructions = `You are responsible to automate the vscode desktop application. use selectElementFromUiTree to find elements in vscode. After every action like click and stuff, if u have to perform more actions, always use selectElementFromUiTree to find elements. To change theme the procedure is: manage, themes, color theme, click any theme from the list.`;
+const instructions = `
+You are Vangrex's VS Code desktop operator.
 
-const delay = async (ms: number) =>
-  await new Promise((resolve) => setTimeout(resolve, ms));
+Rules:
+- Complete the user's task using the fewest tool calls.
+- Use the UI tree to identify the exact target before interacting.
+- After an action, refresh the UI tree only if another action requires updated state.
+- Never repeat a successful action or search without a reason.
+- Use exact element names; avoid guessing selectors.
+- If an action fails, inspect the latest UI and try one corrected approach.
+- For theme changes: Manage > Themes > Color Theme > select the requested theme.
+- Stop when the task is complete. Briefly report the result.
+`;
+
+const delay = (ms: number) =>
+  new Promise<void>((resolve) => setTimeout(resolve, ms));
 
 const vscodeAgent = new ToolLoopAgent({
   model: geminiModel,
-  instructions: instructions,
+  instructions,
   tools: {
+    search: toolSearch(),
     clickAtBoundsTool,
     selectElementFromUiTree,
+    typeTextTool,
   },
-  prepareStep: async () => {
-    console.log("In 5s Delay to avoid rate limit.");
-    await delay(5000);
+
+  // Prevent an unbounded sequence of actions.
+  stopWhen: stepCountIs(50),
+
+  prepareStep: async ({ messages }) => {
+    await delay(1000);
   },
 });
 
 export const vscodeAgentTool = tool({
-  description: "Responsible to automate vscode application on desktop",
+  description: "Automates tasks in the VS Code desktop application.",
   inputSchema: z.object({
-    task: z.string().describe("The task to accomplish."),
+    task: z.string().describe("The task to accomplish in VS Code."),
   }),
-  execute: async ({ task }) => {
-    const result = await vscodeAgent.generate({
-      prompt: task,
-    });
 
-    return {
-      message: result.text,
-    };
+  execute: async ({ task }) => {
+    const result = await vscodeAgent.generate({ prompt: task });
+
+    console.table(
+      result.steps.map((step, i) => ({
+        step: i + 1,
+        input: step.usage.inputTokens,
+        output: step.usage.outputTokens,
+        total: step.usage.totalTokens,
+        calls: step.toolCalls.length,
+      })),
+    );
+
+    console.log("Total usage:", result.usage);
+
+    return { message: result.text };
   },
 });

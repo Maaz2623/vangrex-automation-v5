@@ -1,6 +1,6 @@
-Window|vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code (focused)
+Window|vangrex-automation-v5 - Visual Studio Code (focused)
 Pane|N/A
-Pane|vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code
+Pane|vangrex-automation-v5 - Visual Studio Code
 Pane|N/A
 Pane|N/A
 Pane|N/A
@@ -11,7 +11,7 @@ Pane|N/A
 Pane|N/A
 Pane|N/A
 Pane|N/A
-Document|vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code
+Document|vangrex-automation-v5 - Visual Studio Code
 Group|N/A
 Pane|N/A
 Group|N/A
@@ -54,9 +54,9 @@ TabItem|Explorer
 Group|Explorer
 TabItem|Search
 Group|Search
-TabItem|Source Control - 7 pending changes
-Group|Source Control - 7 pending changes
-Group|Source Control - 7 pending changes
+TabItem|Source Control - 6 pending changes
+Group|Source Control - 6 pending changes
+Group|Source Control - 6 pending changes
 TabItem|Run and Debug
 Group|Run and Debug
 TabItem|Extensions
@@ -77,64 +77,71 @@ Text|1
 Button|Manage
 Group|Manage
 Text|
-Text|Thunder Client
-ToolBar|Thunder Client actions
-Button|Reload Data
+Text|Explorer
+ToolBar|Extensions: Marketplace actions
 Group|N/A
 Group|N/A
 Button|Views and More Actions...
 ToolBar|N/A
-Document|N/A
 Group|N/A
 Group|N/A
-Group|N/A
-Tab|N/A
-TabItem|vscode.agent.ts
-Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
-ToolBar|Tab actions
-Button|Close
-TabItem|vangrex.agent.ts
-Group|D:\projects\vangrex-automation-v5\src\agents\vangrex.agent.ts • Modified
-ToolBar|Tab actions
-Button|Close
-TabItem|index.ts
-Group|D:\projects\vangrex-automation-v5\src\index.ts • Modified
-ToolBar|Tab actions
-Button|Close
-TabItem|ui-tree.tool.ts
-Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts • Untracked
-ToolBar|Tab actions
-Button|Close
-ToolBar|Editor actions
-Button|Open Changes
-Button|Split Editor Right [Alt] Split Editor Down
-Group|N/A
-Group|N/A
-Button|More Actions...
-Text|
-List|N/A
-ListItem|src
+Button|Explorer Section: vangrex-automation-v5
+Text|Explorer Section: vangrex-automation-v5
+Tree|Files Explorer
+TreeItem|node_modules
+Group|D:\projects\vangrex-automation-v5\node_modules
+TreeItem|src
 Group|D:\projects\vangrex-automation-v5\src • Contains emphasized items
-Text|src
-Text|
-ListItem|agents
+TreeItem|agents
 Group|D:\projects\vangrex-automation-v5\src\agents • Contains emphasized items
-Text|agents
-Text|
-ListItem|vscode.agent.ts
+TreeItem|vangrex.agent.ts
+Group|D:\projects\vangrex-automation-v5\src\agents\vangrex.agent.ts • Modified
+TreeItem|vscode.agent.ts
 Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
-Text|N/A
-Text|vscode.agent.ts
-Text|
-ListItem|instructions
-Text|
-Group|instructions (variable)
-Text|instructions
-Group|vscode.agent.ts
-Text|N/A
-Edit|The editor is not accessible at this time. To enable screen reader optimized mode, use Shift+Alt+F1
-List|Show Code Actions
-Text|
+TreeItem|tools
+Group|D:\projects\vangrex-automation-v5\src\tools • Contains emphasized items
+TreeItem|keyboard.tools.ts
+Group|D:\projects\vangrex-automation-v5\src\tools\keyboard.tools.ts • Untracked
+TreeItem|mouse.tools.ts
+Group|D:\projects\vangrex-automation-v5\src\tools\mouse.tools.ts
+TreeItem|ui-tree.tool.ts
+Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts
+TreeItem|utils
+Group|D:\projects\vangrex-automation-v5\src\utils • Contains emphasized items
+TreeItem|desktop.ts
+Group|D:\projects\vangrex-automation-v5\src\utils\desktop.ts
+TreeItem|keyboard.ts
+Group|D:\projects\vangrex-automation-v5\src\utils\keyboard.ts • Untracked
+TreeItem|mouse.ts
+Group|D:\projects\vangrex-automation-v5\src\utils\mouse.ts
+TreeItem|tree-filter.ts
+Group|D:\projects\vangrex-automation-v5\src\utils\tree-filter.ts • Modified
+TreeItem|index.ts
+Group|D:\projects\vangrex-automation-v5\src\index.ts
+TreeItem|model.ts
+Group|D:\projects\vangrex-automation-v5\src\model.ts
+TreeItem|ui-tree-fetcher.ts
+Group|D:\projects\vangrex-automation-v5\src\ui-tree-fetcher.ts
+TreeItem|.env
+Group|D:\projects\vangrex-automation-v5\.env
+TreeItem|.gitignore
+Group|D:\projects\vangrex-automation-v5\.gitignore
+TreeItem|bun.lock
+Group|D:\projects\vangrex-automation-v5\bun.lock
+TreeItem|new-tree.txt
+Group|D:\projects\vangrex-automation-v5\new-tree.txt • Modified
+TreeItem|package.json
+Group|D:\projects\vangrex-automation-v5\package.json
+TreeItem|README.md
+Group|D:\projects\vangrex-automation-v5\README.md
+Button|Outline Section
+Text|Outline
+Button|Timeline Section
+Text|Timeline
+Group|N/A
+Group|N/A
+Group|Editor Group 1 (empty)
+ToolBar|N/A
 Tab|Active View Switcher
 TabItem|Problems
 Group|Problems
@@ -177,7 +184,7 @@ Text|41 x 12
 Group|N/A
 Image|N/A
 Group|N/A
-Edit|Terminal 2, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
+Edit|Terminal 2, powershell Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
 Group|N/A
 Text|
 Text|
@@ -197,11 +204,11 @@ Group|┌ $(terminal) bun
 Text|┌
 Text|
 Text|bun
-ListItem|Terminal 2 bun, split 2 of 2
-Group|└ $(terminal) bun
+ListItem|Terminal 2 powershell, split 2 of 2
+Group|└ $(terminal) powershell
 Text|└
 Text|
-Text|bun
+Text|powershell
 StatusBar|N/A
 Group|remote
 Button|remote
@@ -217,43 +224,10 @@ Group|check Prettier
 Button|check Prettier
 Group|Copilot status
 Button|Copilot status
-Group|TypeScript
-Button|TypeScript
-Group|Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier
-Button|Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier
-Group|CRLF
-Button|CRLF
-Group|UTF-8
-Button|UTF-8
-Group|Spaces: 2
-Button|Spaces: 2
-Group|Ln 8, Col 365
-Button|Ln 8, Col 365
 Text|N/A
-Text|Error: Please login to use Thunder Client.
+Text|ms: number, , , hint
 Text|N/A
 Group|N/A
-Text|Cursor added: line 13 column 22
+Text|Cursor added: line 10 column 47
 Group|N/A
-Group|N/A
-Document|N/A
-Document|N/A
-Document|Thunder Client
-Document|Http Buddy
-Document|N/A
-Button|New Request
-Button|Menu
-Group|N/A
-List|N/A
-ListItem|Activity
-ListItem|Collections
-ListItem|Env
-List|N/A
-ListItem|Welcome to Thunder ClientCreate a free account to get started, or log in if you already have one.Log InCreate Free Account
-Edit|filter activity
-Group|N/A
-Text|Welcome to Thunder Client
-Text|Create a free account to get started, or log in if you already have one.
-Text|Log In
-Hyperlink|Create Free Account
 Pane|N/A

@@ -65,6 +65,13 @@ export function filterTree(tree: string, prompt: string): string {
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || a.index - b.index);
 
+  console.log(
+    ranked
+      .slice(0, 10)
+      .map((item) => item.line)
+      .join("\n"),
+  );
+
   return ranked
     .slice(0, 10)
     .map((item) => item.line)
