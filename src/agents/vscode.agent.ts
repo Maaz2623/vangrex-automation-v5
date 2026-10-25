@@ -9,11 +9,15 @@ import {
 import { geminiModel } from "../model";
 import z from "zod";
 import { clickAtBoundsTool, hoverAtBoundsTool } from "../tools/mouse.tools";
-import { selectElementFromUiTree } from "../tools/ui-tree.tool";
+import {
+  getUiVisionState,
+  selectElementFromUiTree,
+} from "../tools/ui-tree.tool";
 import { typeTextTool } from "../tools/keyboard.tools";
 
 const instructions = `
 You are Vangrex's VS Code desktop operator.
+Always run the getUiVisionState after every other tool step and initially to inspect the WIndow UI visually.
 
 Procedures:
 - To create a file or folder, hover over explorer section followed by dir name and a new elements about new file and stuff will appear in tree click it precisely. Then click the either options.
@@ -38,6 +42,7 @@ const vscodeAgent = new ToolLoopAgent({
   instructions,
   tools: {
     search: toolSearch(),
+    getUiVisionState,
     clickAtBoundsTool,
     selectElementFromUiTree,
     typeTextTool,
@@ -49,7 +54,6 @@ const vscodeAgent = new ToolLoopAgent({
 
   prepareStep: async ({ messages }) => {
     await delay(1000);
-    console.log(messages);
   },
 });
 
