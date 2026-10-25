@@ -24,6 +24,8 @@ export const clickAtBounds = async ({
   const targetX = Math.round(x + (width * xPercentage) / 100);
   const targetY = Math.round(y + (height * yPercentage) / 100);
 
+  console.log(targetX, targetY);
+
   robot.moveMouseSmooth(targetX, targetY, -1);
 
   robot.mouseClick(clickType, double);

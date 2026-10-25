@@ -20,6 +20,7 @@ Procedures:
 
 Rules:
 - Complete the user's task using the fewest tool calls.
+- Use the image returned by the select element from ui tree tool to make decisions.
 - Use the UI tree to identify the exact target before interacting.
 - After an action, refresh the UI tree only if another action requires updated state.
 - Never repeat a successful action or search without a reason.

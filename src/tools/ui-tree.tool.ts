@@ -2,6 +2,8 @@ import { tool } from "ai";
 import z from "zod";
 import { readFile } from "node:fs/promises";
 import { filterTree } from "../utils/tree-filter";
+import * as Terminator from "@mediar-ai/terminator";
+import { desktop } from "../utils/desktop";
 
 const TREE_FILE = "new-tree.txt";
 
@@ -19,6 +21,8 @@ export const selectElementFromUiTree = tool({
     const tree = await readFile(TREE_FILE, "utf-8");
 
     const candidates = filterTree(tree, name);
+
+    console.log(candidates);
 
     if (!candidates.trim()) {
       return {

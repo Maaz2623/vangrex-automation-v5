@@ -1,6 +1,6 @@
-Window|vangrex-automation-v5 - Visual Studio Code (focused)
+Window|test.ts - vangrex-automation-v5 - Visual Studio Code (focused)
 Pane|N/A
-Pane|vangrex-automation-v5 - Visual Studio Code
+Pane|test.ts - vangrex-automation-v5 - Visual Studio Code
 Pane|N/A
 Pane|N/A
 Pane|N/A
@@ -11,7 +11,7 @@ Pane|N/A
 Pane|N/A
 Pane|N/A
 Pane|N/A
-Document|vangrex-automation-v5 - Visual Studio Code
+Document|test.ts - vangrex-automation-v5 - Visual Studio Code
 Group|N/A
 Pane|N/A
 Group|N/A
@@ -24,7 +24,8 @@ MenuItem|Selection
 MenuItem|View
 MenuItem|Go
 MenuItem|Run
-MenuItem|More
+MenuItem|Terminal
+MenuItem|Help
 ToolBar|N/A
 Button|Go Back
 Button|Go Forward
@@ -54,9 +55,9 @@ TabItem|Explorer
 Group|Explorer
 TabItem|Search
 Group|Search
-TabItem|Source Control - 5 pending changes
-Group|Source Control - 5 pending changes
-Group|Source Control - 5 pending changes
+TabItem|Source Control
+Group|Source Control
+Group|Source Control
 TabItem|Run and Debug
 Group|Run and Debug
 TabItem|Extensions
@@ -67,6 +68,8 @@ TabItem|Vercel Deployment
 Group|Vercel Deployment
 TabItem|Python
 Group|Python
+TabItem|Thunder Client
+Group|Thunder Client
 ToolBar|Manage
 Button|Accounts - Sign in to Sync Settings
 Group|Accounts - Sign in to Sync Settings
@@ -84,6 +87,13 @@ ToolBar|N/A
 Group|N/A
 Button|Changes Section
 Text|Changes
+Group|N/A
+ToolBar|Changes actions
+Button|Commit
+Button|Refresh
+Group|N/A
+Group|N/A
+Button|More Actions...
 Tree|Source Control Management
 TreeItem|Source Control Input
 Text|N/A
@@ -94,14 +104,24 @@ TreeItem|$(check) Commit
 Button|Commit Changes on "main"
 Button|More Actions...
 TreeItem|Changes
+TreeItem|bun.lock, Modified
+Group|D:\projects\vangrex-automation-v5\bun.lock • Modified
 TreeItem|new-tree.txt, Modified
 Group|D:\projects\vangrex-automation-v5\new-tree.txt • Modified
-TreeItem|test.ts, Untracked
-Group|D:\projects\vangrex-automation-v5\test.ts • Untracked
+TreeItem|package.json, Modified
+Group|D:\projects\vangrex-automation-v5\package.json • Modified
+TreeItem|test.ts, Modified
+Group|D:\projects\vangrex-automation-v5\test.ts • Modified
+ToolBar|N/A
+Button|Open File
+Button|Discard Changes
+Button|Stage Changes
 TreeItem|vscode.agent.ts, Modified, src\agents
 Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
-TreeItem|mouse.tools.ts, Modified, src\tools
-Group|D:\projects\vangrex-automation-v5\src\tools\mouse.tools.ts • Modified
+TreeItem|ui-tree.tool.ts, Modified, src\tools
+Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts • Modified
+TreeItem|desktop.ts, Modified, src\utils
+Group|D:\projects\vangrex-automation-v5\src\utils\desktop.ts • Modified
 TreeItem|mouse.ts, Modified, src\utils
 Group|D:\projects\vangrex-automation-v5\src\utils\mouse.ts • Modified
 Button|Graph Section
@@ -112,31 +132,58 @@ Button|main, origin/main
 Button|Go to Current History Item
 Button|Fetch From All Remotes
 Button|Pull
-Button|Push
+Button|Publish Branch...
 Button|Refresh
 Group|N/A
 Group|N/A
 Button|More Actions...
 Tree|Source Control History
-TreeItem|Enhance Vangrex automation: update agent instructions, add typeText tool, and improve tree filtering logging, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|new file: new-tree.txt modified: src/agents/vangrex.agent.ts modified: src/agents/vscode.agent.ts modified: src/index.ts new file: src/tools/mouse.tools.ts new file: src/tools/ui-tree.tool.ts new file: src/utils/tree-filter.ts, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|Add UI tree fetching functionality and update scripts in package.json, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|Add new dependencies and enhance vscode automation capabilities - Updated bun.lock and package.json to include new dependencies: @mediar-ai/terminator, robotjs, and zod. - Implemented vscodeAgentTool for automating VSCode tasks. - Enhanced vangrexAgent instructions for clarity. - Removed unused bot.ts file. - Introduced desktop and mouse utility functions for improved interaction., Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|new file: .gitignore new file: README.md new file: bun.lock new file: package.json new file: src/agents/vangrex.agent.ts new file: src/bot.ts new file: src/index.ts new file: src/model.ts new file: tsconfig.json, Mohammed Maaz
-Image|N/A
+ProgressBar|Progress
 Group|N/A
 Group|N/A
 Group|N/A
-Group|Editor Group 1 (empty)
-ToolBar|N/A
+Tab|N/A
+TabItem|vscode.agent.ts
+Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|ui-tree.tool.ts
+Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|mouse.tools.ts
+Group|D:\projects\vangrex-automation-v5\src\tools\mouse.tools.ts
+ToolBar|Tab actions
+Button|Close
+TabItem|mouse.ts
+Group|D:\projects\vangrex-automation-v5\src\utils\mouse.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|test.ts
+Group|D:\projects\vangrex-automation-v5\test.ts • Modified
+ToolBar|Tab actions
+Button|Close
+TabItem|desktop.ts
+Group|D:\projects\vangrex-automation-v5\src\utils\desktop.ts • Modified
+ToolBar|Tab actions
+Button|Close
+ToolBar|Editor actions
+Button|Open Changes
+Button|Split Editor Right [Alt] Split Editor Down
+Group|N/A
+Group|N/A
+Button|More Actions...
+Text|
+List|N/A
+ListItem|test.ts
+Group|D:\projects\vangrex-automation-v5\test.ts • Modified
+Text|N/A
+Text|test.ts
+Text|
+ListItem|…
+Group|test.ts
+Text|N/A
+Edit|The editor is not accessible at this time. To enable screen reader optimized mode, use Shift+Alt+F1
 Tab|Active View Switcher
 TabItem|Problems
 Group|Problems
@@ -149,14 +196,11 @@ Group|Terminal
 TabItem|Ports
 Group|Ports
 ToolBar|Terminal actions
-Button|Focus Terminal [Alt] Split Terminal
 Button|New Terminal [Alt] Split Terminal
 Button|New Terminal [Alt] Split Terminal
 Group|N/A
 Group|N/A
 Button|Launch Profile...
-Button|Split Terminal
-Button|Kill Terminal
 Group|N/A
 Group|N/A
 Button|Views and More Actions...
@@ -168,18 +212,9 @@ Button|Hide Panel
 Group|N/A
 Group|N/A
 Group|N/A
-Group|N/A
 Image|N/A
 Group|N/A
-Edit|Terminal 1, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
-Image|N/A
-Image|N/A
-StatusBar|N/A
-Text|41 x 12
-Group|N/A
-Image|N/A
-Group|N/A
-Edit|Terminal 2, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
+Edit|Terminal 7, powershell Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
 Image|N/A
 Image|N/A
 Group|N/A
@@ -188,19 +223,22 @@ Group|N/A
 Edit|Terminal input
 Image|N/A
 Image|N/A
-StatusBar|N/A
-Text|41 x 12
 List|Terminal tabs
 ListItem|Terminal 1 bun, split 1 of 2
 Group|┌ $(terminal) bun
 Text|┌
 Text|
 Text|bun
-ListItem|Terminal 2 bun, split 2 of 2
+Text|
+ListItem|Terminal 4 bun, split 2 of 2
 Group|└ $(terminal) bun
 Text|└
 Text|
 Text|bun
+ListItem|Terminal 7 powershell
+Group|$(terminal) powershell
+Text|
+Text|powershell
 StatusBar|N/A
 Group|remote
 Button|remote
@@ -212,23 +250,26 @@ Group|No Problems
 Button|No Problems
 Group|Notifications
 Button|Notifications
-Group|Copilot status
-Button|Copilot status
+Group|check Prettier
+Button|check Prettier
+Group|Inline suggestions disabled
+Button|Inline suggestions disabled
+Group|TypeScript
+Button|TypeScript
+Group|Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier, next: $(copilot) No inline suggestion available, Inline suggestions
+Button|Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier, next: $(copilot) No inline suggestion available, Inline suggestions
+Group|CRLF
+Button|CRLF
+Group|UTF-8
+Button|UTF-8
+Group|Spaces: 2
+Button|Spaces: 2
+Group|Ln 94, Col 1 (3148 selected)
+Button|Ln 94, Col 1 (3148 selected)
 Text|N/A
-Text|Error: The name **temp.** is not valid as a file or folder name. Please choose a different name.
+Text|button?: string, , , hint
 Text|N/A
 Group|N/A
-Text|Cursor added: line 10 column 19
+Text|Loading...
 Group|N/A
-Group|N/A
-Menu|N/A
-MenuItem|Commit
-Group|Commit
-MenuItem|Commit (Amend)
-Group|Commit (Amend)
-Group|N/A
-MenuItem|Commit & Push
-Group|Commit & Push
-MenuItem|Commit & Sync
-Group|Commit & Sync
 Pane|N/A
