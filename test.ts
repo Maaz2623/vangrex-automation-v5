@@ -18,7 +18,7 @@ for (let step = 1; step <= 4; step++) {
 
   const result = await generateText({
     model: geminiModel,
-    prompt: "Change the theme to light",
+    prompt: "UnInstall thunder client extension",
     instructions: `UI Elements: ${formatted}. Give the name and role of the element. Don't include shortcuts. Always use Pascal casing for role.`,
     output: Output.object({
       schema: z.object({
