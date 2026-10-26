@@ -17,37 +17,7 @@ const REFRESH_MS = 1000;
 // --------------------------------------------------
 
 function compactTree(tree: string): string {
-  const output: string[] = [];
-
-  for (const raw of tree.split("\n")) {
-    const line = raw.trim();
-
-    if (!line) continue;
-
-    const match = line.match(/^(?:#(\d+)\s+|-\s+)?\[([^\]]+)\]\s*(.*)$/);
-
-    if (!match) continue;
-
-    const [, , role, rawContent] = match;
-
-    let name = rawContent
-      // Remove bounds metadata.
-      .replace(/\s*\(bounds:\s*\[[^\]]*\][^)]*\)/g, "")
-      // Remove keyboard shortcuts, e.g. (Ctrl+Shift+X).
-      .replace(/\s*\((?:Ctrl|Alt|Shift|Win|Windows|Cmd|Command)\b[^)]*\)/gi, "")
-      .trim();
-
-    if (!name) {
-      name = "N/A";
-    }
-
-    // Prevent names from breaking the Role|Name format.
-    name = name.replace(/\|/g, "/");
-
-    output.push(`${role}|${name}`);
-  }
-
-  return output.join("\n");
+  return tree;
 }
 
 // --------------------------------------------------

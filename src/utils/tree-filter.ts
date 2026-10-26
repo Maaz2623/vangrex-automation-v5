@@ -1,17 +1,35 @@
 export function filterTree(tree: string, prompt: string): string {
   const lines = tree.split("\n");
 
-  const elements = lines.filter((line) => {
-    const seperator = line.indexOf("|");
+  const elements = lines
+    .map((line) => {
+      const match = line.match(/\[(.*?)\]\s*(.*)/);
 
-    if (seperator === -1) return false;
+      if (!match) return null;
 
-    const role = line.slice(0, seperator).trim();
+      const role = match[1].trim();
 
-    const name = line.slice(seperator + 1).trim();
+      // Extract the name for matching without modifying the original line.
+      const name = match[2]
+        .replace(/\s*\(bounds:.*$/, "")
+        .replace(
+          /\s*\((?:Ctrl|Alt|Shift|Win|Windows|Cmd|Command)\b[^)]*\)/gi,
+          "",
+        )
+        .trim();
 
-    return role.length > 0 && name.length > 0;
-  });
+      if (!role || !name) return null;
+
+      return {
+        role,
+        name,
+        line, // Preserve the complete original tree line.
+      };
+    })
+    .filter(
+      (element): element is { role: string; name: string; line: string } =>
+        element !== null,
+    );
 
   const stopWords = new Set([
     "click",
@@ -44,12 +62,8 @@ export function filterTree(tree: string, prompt: string): string {
     .filter((word) => word.length > 1 && !stopWords.has(word));
 
   const ranked = elements
-    .map((line, index) => {
-      const seperator = line.indexOf("|");
-      const role = line.slice(0, seperator).trim();
-      const name = line.slice(seperator + 1).trim();
-
-      const description = `${role} ${name}`.toLocaleLowerCase();
+    .map((element, index) => {
+      const description = `${element.role} ${element.name}`.toLocaleLowerCase();
 
       const score = words.reduce(
         (total, word) => total + (description.includes(word) ? 1 : 0),
@@ -57,7 +71,7 @@ export function filterTree(tree: string, prompt: string): string {
       );
 
       return {
-        line: `${role} ${name}`,
+        line: element.line,
         score,
         index,
       };
@@ -65,15 +79,15 @@ export function filterTree(tree: string, prompt: string): string {
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || a.index - b.index);
 
-  console.log(
-    ranked
-      .slice(0, 10)
-      .map((item) => item.line)
-      .join("\n"),
-  );
-
-  return ranked
+  const result = ranked
     .slice(0, 10)
     .map((item) => item.line)
     .join("\n");
+
+  console.log(
+    "Filtered candidates:\n",
+    result || "No matching elements found.",
+  );
+
+  return result;
 }

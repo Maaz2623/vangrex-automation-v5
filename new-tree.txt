@@ -1,260 +1,297 @@
-Window|vangrex-automation-v5 - Visual Studio Code (focused)
-Pane|N/A
-Pane|vangrex-automation-v5 - Visual Studio Code
-Pane|N/A
-Pane|N/A
-Pane|N/A
-Button|Minimize
-Button|Restore
-Button|Close
-Pane|N/A
-Pane|N/A
-Pane|N/A
-Pane|N/A
-Document|vangrex-automation-v5 - Visual Studio Code
-Group|N/A
-Pane|N/A
-Group|N/A
-Group|N/A
-Group|N/A
-MenuBar|N/A
-MenuItem|File
-MenuItem|Edit
-MenuItem|Selection
-MenuItem|View
-MenuItem|Go
-MenuItem|Run
-MenuItem|Terminal
-MenuItem|Help
-ToolBar|N/A
-Button|Go Back
-Button|Go Forward
-ToolBar|Agent Status
-Button|Open Quick Access
-Group|N/A
-Button|Toggle Chat
-Button|Toggle Chat
-Group|N/A
-Group|N/A
-Button|More Actions
-ToolBar|N/A
-Button|Open in Agents Window
-ToolBar|Title actions
-Button|Customize Layout...
-Button|Toggle Primary Side Bar
-Text|
-Button|Toggle Panel
-Text|
-Button|Toggle Secondary Side Bar
-Text|
-Group|N/A
-Group|N/A
-Group|N/A
-Tab|Active View Switcher
-TabItem|Explorer
-Group|Explorer
-TabItem|Search
-Group|Search
-TabItem|Source Control - 3 pending changes
-Group|Source Control - 3 pending changes
-Group|Source Control - 3 pending changes
-TabItem|Run and Debug
-Group|Run and Debug
-TabItem|Extensions
-Group|Extensions
-TabItem|Vercel
-Group|Vercel
-TabItem|Vercel Deployment
-Group|Vercel Deployment
-TabItem|Python
-Group|Python
-TabItem|Thunder Client
-Group|Thunder Client
-ToolBar|Manage
-Button|Accounts - Sign in to Sync Settings
-Group|Accounts - Sign in to Sync Settings
-Group|Accounts - Sign in to Sync Settings
-Text|1
-Button|Manage
-Group|Manage
-Text|
-Text|Source Control
-ToolBar|Source Control actions
-Group|N/A
-Group|N/A
-Button|Views and More Actions...
-ToolBar|N/A
-Group|N/A
-Button|Changes Section
-Text|Changes
-Tree|Source Control Management
-TreeItem|Source Control Input
-Text|N/A
-Edit|The editor is not accessible at this time. To enable screen reader optimized mode, use Shift+Alt+F1
-ToolBar|N/A
-Button|Generate Commit Message
-TreeItem|$(check) Commit
-Button|Commit Changes on "main"
-Button|More Actions...
-TreeItem|Changes
-TreeItem|new-tree.txt, Modified
-Group|D:\projects\vangrex-automation-v5\new-tree.txt • Modified
-TreeItem|vscode.agent.ts, Modified, src\agents
-Group|D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
-TreeItem|ui-tree.tool.ts, Modified, src\tools
-Group|D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts • Modified
-Button|Graph Section
-Text|Graph
-Group|N/A
-ToolBar|Graph actions
-Button|main, origin/main
-Button|Go to Current History Item
-Button|Fetch From All Remotes
-Button|Pull
-Button|Push
-Button|Refresh
-Group|N/A
-Group|N/A
-Button|More Actions...
-Tree|Source Control History
-TreeItem|modified: bun.lock modified: new-tree.txt modified: package.json modified: src/agents/vscode.agent.ts modified: src/tools/ui-tree.tool.ts modified: src/utils/desktop.ts modified: src/utils/mouse.ts modified: test.ts, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|Add hoverAtBounds tool and enhance vscode agent instructions, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|Enhance Vangrex automation: update agent instructions, add typeText tool, and improve tree filtering logging, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|new file: new-tree.txt modified: src/agents/vangrex.agent.ts modified: src/agents/vscode.agent.ts modified: src/index.ts new file: src/tools/mouse.tools.ts new file: src/tools/ui-tree.tool.ts new file: src/utils/tree-filter.ts, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|Add UI tree fetching functionality and update scripts in package.json, Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|Add new dependencies and enhance vscode automation capabilities - Updated bun.lock and package.json to include new dependencies: @mediar-ai/terminator, robotjs, and zod. - Implemented vscodeAgentTool for automating VSCode tasks. - Enhanced vangrexAgent instructions for clarity. - Removed unused bot.ts file. - Introduced desktop and mouse utility functions for improved interaction., Mohammed Maaz
-Image|N/A
-Group|N/A
-TreeItem|new file: .gitignore new file: README.md new file: bun.lock new file: package.json new file: src/agents/vangrex.agent.ts new file: src/bot.ts new file: src/index.ts new file: src/model.ts new file: tsconfig.json, Mohammed Maaz
-Image|N/A
-Group|N/A
-Group|N/A
-Group|N/A
-Group|Editor Group 1 (empty)
-ToolBar|N/A
-List|N/A
-ListItem|Open Chat
-Text|Open Chat
-Group|Control+Alt+I
-Text|Ctrl
-Text|+
-Text|Alt
-Text|+
-Text|I
-List|N/A
-ListItem|Show All Commands
-Text|Show All Commands
-Group|Control+Shift+P
-Text|Ctrl
-Text|+
-Text|Shift
-Text|+
-Text|P
-List|N/A
-ListItem|Go to File
-Text|Go to File
-Group|Control+P
-Text|Ctrl
-Text|+
-Text|P
-Tab|Active View Switcher
-TabItem|Problems
-Group|Problems
-TabItem|Output
-Group|Output
-TabItem|Debug Console
-Group|Debug Console
-TabItem|Terminal
-Group|Terminal
-TabItem|Ports
-Group|Ports
-ToolBar|Terminal actions
-Button|New Terminal [Alt] Split Terminal
-Button|New Terminal [Alt] Split Terminal
-Group|N/A
-Group|N/A
-Button|Launch Profile...
-Group|N/A
-Group|N/A
-Button|Views and More Actions...
-Group|N/A
-ToolBar|N/A
-Button|Maximize Panel
-Text|
-Button|Hide Panel
-Group|N/A
-Group|N/A
-Group|N/A
-Group|N/A
-Image|N/A
-Group|N/A
-Edit|Terminal 1, powershell Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
-Text|
-Image|N/A
-Image|N/A
-StatusBar|N/A
-Text|62 x 12
-Group|N/A
-Image|N/A
-Group|N/A
-Edit|Terminal 4, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
-Text|
-Image|N/A
-Image|N/A
-List|Terminal tabs
-ListItem|Terminal 1 powershell, split 1 of 2
-Group|┌ $(terminal) powershell
-Text|┌
-Text|
-Text|powershell
-Text|
-ListItem|Terminal 4 bun, split 2 of 2
-Group|└ $(terminal) bun
-Text|└
-Text|
-Text|bun
-ListItem|Terminal 7 powershell
-Group|$(terminal) powershell
-Text|
-Text|powershell
-StatusBar|N/A
-Group|remote
-Button|remote
-Group|vangrex-automation-v5 (Git) - main*, Checkout Branch/Tag...
-Button|vangrex-automation-v5 (Git) - main*, Checkout Branch/Tag...
-Group|vangrex-automation-v5 (Git) - Synchronize Changes
-Button|vangrex-automation-v5 (Git) - Synchronize Changes
-Group|No Problems
-Button|No Problems
-Group|Notifications
-Button|Notifications
-Group|Copilot status
-Button|Copilot status
-Text|N/A
-Text|N/A
-Text|8 extensions found in the Recommended section.
-Group|N/A
-Text|Cursor added: line 55 column 28
-Group|N/A
-Group|N/A
-Menu|N/A
-MenuItem|Commit
-Group|Commit
-MenuItem|Commit (Amend)
-Group|Commit (Amend)
-Group|N/A
-MenuItem|Commit & Push
-Group|Commit & Push
-MenuItem|Commit & Sync
-Group|Commit & Sync
-Pane|N/A
+- [Window] vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code (focused)
+  #1 [Pane] (bounds: [0,0,1537,863], disabled, focusable)
+  - [Pane] vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code
+    - [Pane]
+      - [Pane]
+        - [Pane]
+          #2 [Button] Minimize (bounds: [1366,0,57,43], focusable)
+          #3 [Button] Restore (bounds: [1422,0,59,43], focusable)
+          #4 [Button] Close (bounds: [1479,0,59,43], focusable)
+        - [Pane]
+          - [Pane]
+            - [Pane]
+              - [Pane]
+                #5 [Document] vscode.agent.ts - vangrex-automation-v5 - Visual Studio Code (bounds: [0,0,1538,864], focusable)
+                  - [Group]
+                    - [Pane]
+                      - [Group]
+                      - [Group]
+                      - [Group]
+                      - [MenuBar]
+                        #6 [MenuItem] File (bounds: [43,0,46,45], focusable)
+                        #7 [MenuItem] Edit (bounds: [87,0,48,45], focusable)
+                        #8 [MenuItem] Selection (bounds: [134,0,87,45], focusable)
+                        #9 [MenuItem] View (bounds: [218,0,55,45], focusable)
+                        #10 [MenuItem] Go (bounds: [272,0,43,45], focusable)
+                        #11 [MenuItem] Run (bounds: [313,0,49,45], focusable)
+                        #12 [MenuItem] More (bounds: [360,0,49,45], focusable)
+                      - [ToolBar]
+                        #13 [Button] Go Back (Alt+LeftArrow) (bounds: [443,8,30,29], focusable)
+                        #14 [Button] Go Forward (Alt+RightArrow) (bounds: [476,8,29,29], disabled, focusable)
+                        #15 [ToolBar] Agent Status (bounds: [508,7,586,31], focusable)
+                          #16 [Button] Open Quick Access (bounds: [509,8,521,29], focusable)
+                          #17 [Group] (bounds: [1028,8,65,29], focusable)
+                            - [Button] Toggle Chat
+                              - [Button] Toggle Chat
+                            - [Group]
+                              - [Group]
+                                - [Button] More Actions
+                      - [ToolBar]
+                        #18 [Button] Open in Agents Window (Ctrl+Shift+Alt+A) (bounds: [1104,8,32,29], focusable)
+                      - [ToolBar] Title actions
+                        #19 [Button] Customize Layout... (bounds: [1236,8,29,29], focusable)
+                        #20 [Button] Toggle Primary Side Bar (Ctrl+B) (bounds: [1268,8,29,29], focusable)
+                          - [Text] 
+                        #21 [Button] Toggle Panel (Ctrl+J) (bounds: [1301,8,29,29], focusable)
+                          - [Text] 
+                        #22 [Button] Toggle Secondary Side Bar (Ctrl+Alt+B) (bounds: [1333,8,29,29], focusable)
+                          - [Text] 
+                      - [Group]
+                      - [Group]
+                      - [Group]
+                      - [Tab] Active View Switcher
+                        #23 [TabItem] Explorer (Ctrl+Shift+E) (bounds: [9,47,47,47], focusable)
+                          - [Group] Explorer (Ctrl+Shift+E)
+                        #24 [TabItem] Search (Ctrl+Shift+F) (bounds: [9,102,47,46], focusable)
+                          - [Group] Search (Ctrl+Shift+F)
+                        #25 [TabItem] Source Control (Ctrl+Shift+G) - 8 pending changes (bounds: [9,157,47,47], focusable)
+                          - [Group] Source Control (Ctrl+Shift+G) - 8 pending changes
+                          - [Group] Source Control (Ctrl+Shift+G) - 8 pending changes
+                        #26 [TabItem] Run and Debug (Ctrl+Shift+D) (bounds: [9,211,47,47], focusable)
+                          - [Group] Run and Debug (Ctrl+Shift+D)
+                        #27 [TabItem] Extensions (Ctrl+Shift+X) (bounds: [9,266,47,47], focusable)
+                          - [Group] Extensions (Ctrl+Shift+X)
+                        #28 [TabItem] Vercel (bounds: [9,320,47,47], focusable)
+                          - [Group] Vercel
+                        #29 [TabItem] Vercel Deployment (bounds: [9,375,47,46], focusable)
+                          - [Group] Vercel Deployment
+                        #30 [TabItem] Python (bounds: [9,430,47,46], focusable)
+                          - [Group] Python
+                      - [ToolBar] Manage
+                        #31 [Button] Accounts - Sign in to Sync Settings (bounds: [9,718,47,47], focusable)
+                          - [Group] Accounts - Sign in to Sync Settings
+                          - [Group] Accounts - Sign in to Sync Settings
+                            - [Text] 1
+                        #32 [Button] Manage (bounds: [9,773,47,47], focusable)
+                          - [Group] Manage
+                            - [Text] 
+                      - [Text] Explorer
+                      - [ToolBar] Extensions: Marketplace actions
+                        - [Group]
+                          - [Group]
+                            #33 [Button] Views and More Actions... (bounds: [398,50,29,29], focusable)
+                      - [ToolBar]
+                      - [Group]
+                      - [Group]
+                      #34 [Button] Explorer Section: vangrex-automation-v5 (bounds: [65,83,361,37], focusable)
+                        - [Text] Explorer Section: vangrex-automation-v5
+                      #35 [Tree] Files Explorer (bounds: [60,118,371,630], focusable)
+                        #36 [TreeItem] node_modules (bounds: [65,114,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\node_modules
+                        #37 [TreeItem] src (bounds: [65,141,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src • Contains emphasized items
+                        #38 [TreeItem] agents (bounds: [65,168,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\agents • Contains emphasized items
+                        #39 [TreeItem] temp (bounds: [65,195,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\agents\temp
+                        #40 [TreeItem] vangrex.agent.ts (bounds: [65,222,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\agents\vangrex.agent.ts
+                        #41 [TreeItem] vscode.agent.ts (bounds: [65,250,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+                        #42 [TreeItem] tools (bounds: [65,277,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\tools
+                        #43 [TreeItem] keyboard.tools.ts (bounds: [65,304,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\tools\keyboard.tools.ts
+                        #44 [TreeItem] mouse.tools.ts (bounds: [65,331,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\tools\mouse.tools.ts
+                        #45 [TreeItem] ui-tree.tool.ts (bounds: [65,358,361,30], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\tools\ui-tree.tool.ts
+                        #46 [TreeItem] utils (bounds: [65,386,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\utils • Contains emphasized items
+                        #47 [TreeItem] desktop.ts (bounds: [65,414,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\utils\desktop.ts
+                        #48 [TreeItem] keyboard.ts (bounds: [65,441,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\utils\keyboard.ts
+                        #49 [TreeItem] mouse.ts (bounds: [65,468,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\utils\mouse.ts
+                        #50 [TreeItem] tree-filter.ts (bounds: [65,495,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\utils\tree-filter.ts • Modified
+                        #51 [TreeItem] index.ts (bounds: [65,522,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\index.ts
+                        #52 [TreeItem] model.ts (bounds: [65,550,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\model.ts
+                        #53 [TreeItem] ui-tree-fetcher.ts (bounds: [65,577,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\src\ui-tree-fetcher.ts • Modified
+                        #54 [TreeItem] .env (bounds: [65,604,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\.env
+                        #55 [TreeItem] .gitignore (bounds: [65,631,361,30], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\.gitignore
+                        #56 [TreeItem] bun.lock (bounds: [65,659,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\bun.lock
+                        #57 [TreeItem] debug-grid.jpg (bounds: [65,686,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\debug-grid.jpg • Untracked
+                        #58 [TreeItem] new-tree.txt (bounds: [65,714,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\new-tree.txt • Modified
+                        #59 [TreeItem] package.json (bounds: [65,741,361,29], focusable)
+                          - [Group] D:\projects\vangrex-automation-v5\package.json
+                      #60 [Button] Outline Section (bounds: [65,746,361,37], focusable)
+                        - [Text] Outline
+                      #61 [Button] Timeline Section (bounds: [65,782,361,36], focusable)
+                        - [Text] Timeline
+                      - [Group]
+                      - [Group]
+                        - [Group]
+                          - [Tab]
+                            #62 [TabItem] ui-tree-fetcher.ts (bounds: [437,44,212,40], focusable)
+                              - [Group] D:\projects\vangrex-automation-v5\src\ui-tree-fetcher.ts • Modified
+                              - [ToolBar] Tab actions
+                                #63 [Button] Close (Ctrl+F4) (bounds: [614,50,27,27], focusable)
+                            #64 [TabItem] vscode.agent.ts, preview (bounds: [647,44,203,40], focusable)
+                              - [Group] D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+                              - [ToolBar] Tab actions
+                                #65 [Button] Close (Ctrl+F4) (bounds: [815,50,27,27], focusable)
+                          - [ToolBar] Editor actions
+                            #66 [Button] Open Changes (bounds: [1434,50,29,29], focusable)
+                            #67 [Button] Split Editor Right (Ctrl+\) [Alt] Split Editor Down (bounds: [1466,50,29,29], focusable)
+                            - [Group]
+                              - [Group]
+                                #68 [Button] More Actions... (bounds: [1498,50,30,29], focusable)
+                                  - [Text] 
+                          #69 [List] (bounds: [437,83,1095,29], focusable)
+                            #70 [ListItem] src (bounds: [437,83,62,29], focusable)
+                              - [Group] D:\projects\vangrex-automation-v5\src • Contains emphasized items
+                                - [Text] src
+                              - [Text] 
+                            #71 [ListItem] agents (bounds: [497,83,69,29], focusable)
+                              - [Group] D:\projects\vangrex-automation-v5\src\agents • Contains emphasized items
+                                - [Text] agents
+                              - [Text] 
+                            #72 [ListItem]   vscode.agent.ts (bounds: [564,83,158,29], focusable)
+                              - [Group] D:\projects\vangrex-automation-v5\src\agents\vscode.agent.ts • Modified
+                                - [Text]   
+                                - [Text] vscode.agent.ts
+                              - [Text] 
+                            #73 [ListItem] instructions (bounds: [720,83,118,29], focusable)
+                              - [Text] 
+                              - [Group] instructions (variable)
+                                - [Text] instructions
+                        - [Group] vscode.agent.ts, preview
+                          - [Text]
+                            #74 [Edit] The editor is not accessible at this time. To enable screen reader optimized mode, use Shift+Alt+F1 (bounds: [525,240,928,25], focused, focusable)
+                            - [Window] Find / Replace
+                              - [Edit] Find (disabled)
+                              #75 [CheckBox] Match Case (Alt+C) (bounds: [1118,70,27,27], disabled, focusable)
+                              #76 [CheckBox] Match Whole Word (Alt+W) (bounds: [1145,70,27,27], disabled, focusable)
+                              #77 [CheckBox] Use Regular Expression (Alt+R) (bounds: [1172,70,27,27], disabled, focusable)
+                              - [Text] 2 of 2
+                              #78 [Button] Previous Match (Shift+Enter) (bounds: [1293,68,29,29], disabled, focusable)
+                              #79 [Button] Next Match (Enter) (bounds: [1323,68,29,29], disabled, focusable)
+                              #80 [CheckBox] Find in Selection (Alt+L) (bounds: [1354,68,29,29], disabled, focusable)
+                              #81 [Button] Close (Escape) (bounds: [1384,69,29,29], disabled, focusable)
+                              - [Group]
+                      - [Tab] Active View Switcher
+                        #82 [TabItem] Problems (Ctrl+Shift+M) (bounds: [439,488,93,41], focusable)
+                          - [Group] Problems (Ctrl+Shift+M)
+                        #83 [TabItem] Output (Ctrl+Shift+U) (bounds: [530,488,78,41], focusable)
+                          - [Group] Output (Ctrl+Shift+U)
+                        #84 [TabItem] Debug Console (Ctrl+Shift+Y) (bounds: [606,488,136,41], focusable)
+                          - [Group] Debug Console (Ctrl+Shift+Y)
+                        #85 [TabItem] Terminal (Ctrl+`) (bounds: [741,488,87,41], focusable)
+                          - [Group] Terminal (Ctrl+`)
+                        #86 [TabItem] Ports (bounds: [826,488,62,41], focusable)
+                          - [Group] Ports
+                      - [ToolBar] Terminal actions
+                        #87 [Button] Focus Terminal (Ctrl+DownArrow) [Alt] Split Terminal (Ctrl+Shift+5) (bounds: [1207,493,99,31], focusable)
+                        #88 [Button] New Terminal (Ctrl+Shift+`) [Alt] Split Terminal (Ctrl+Shift+5) (bounds: [1310,494,29,29], focusable)
+                          - [Button] New Terminal (Ctrl+Shift+`) [Alt] Split Terminal (Ctrl+Shift+5)
+                        - [Group]
+                          - [Group]
+                            #89 [Button] Launch Profile... (bounds: [1334,494,21,29], focusable)
+                        #90 [Button] Split Terminal (Ctrl+Shift+5) (bounds: [1358,494,29,29], focusable)
+                        #91 [Button] Kill Terminal (bounds: [1390,494,29,29], focusable)
+                        - [Group]
+                          - [Group]
+                            #92 [Button] Views and More Actions... (bounds: [1422,494,29,29], focusable)
+                        #93 [Group] (bounds: [1459,498,3,22], disabled, focusable)
+                      - [ToolBar]
+                        #94 [Button] Maximize Panel (bounds: [1466,494,29,29], focusable)
+                          - [Text] 
+                        #95 [Button] Hide Panel (Ctrl+J) (bounds: [1498,494,30,29], focusable)
+                      - [Group]
+                      - [Group]
+                        - [Group]
+                        - [Group]
+                          - [Image]
+                          - [Group]
+                            #96 [Edit] Terminal 5, bun Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help (bounds: [462,785,12,23], focusable)
+                            - [Group]
+                              - [Text] 
+                            - [Text] 
+                            - [Image]
+                            - [Image]
+                        - [Group]
+                        - [Group]
+                          - [Group]
+                            #97 [Edit] Terminal input (bounds: [763,569,12,23], focusable)
+                            - [Image]
+                            - [Image]
+                        - [StatusBar]
+                          - [Text] 41 x 12
+                        - [Group]
+                          - [Image]
+                          - [Group]
+                            #98 [Edit] Terminal 6, powershell Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help (bounds: [1329,785,12,23], focusable)
+                            - [Text] 
+                            - [Image]
+                            - [Image]
+                        - [Group]
+                        - [Group]
+                          - [Group]
+                            #99 [Edit] Terminal input (bounds: [1131,569,12,23], focusable)
+                            - [Image]
+                            - [Image]
+                      #100 [List] Terminal tabs (bounds: [1382,527,150,297], focusable)
+                        - [ListItem] Terminal 5 bun, split 1 of 2
+                          - [Group] ┌ $(terminal) bun
+                            - [Text] ┌ 
+                            - [Text] 
+                            - [Text]  bun
+                        - [ListItem] Terminal 6 powershell, split 2 of 2
+                          - [Group] └ $(terminal) powershell
+                            - [Text] └ 
+                            - [Text] 
+                            - [Text]  powershell
+                      #101 [StatusBar] (bounds: [0,828,1538,36], focusable)
+                        - [Group] remote
+                          #102 [Button] remote (bounds: [12,830,34,31], focusable)
+                        - [Group] vangrex-automation-v5 (Git) - main*, Checkout Branch/Tag...
+                          #103 [Button] vangrex-automation-v5 (Git) - main*, Checkout Branch/Tag... (bounds: [50,830,71,31], focusable)
+                        - [Group] vangrex-automation-v5 (Git) - Synchronize Changes
+                          #104 [Button] vangrex-automation-v5 (Git) - Synchronize Changes (bounds: [120,830,30,31], focusable)
+                        - [Group] No Problems
+                          #105 [Button] No Problems (bounds: [158,830,82,31], focusable)
+                        - [Group] Notifications
+                          #106 [Button] Notifications (bounds: [1491,830,37,31], focusable)
+                        - [Group] check-all Prettier
+                          #107 [Button] check-all Prettier (bounds: [1403,830,86,31], focusable)
+                        - [Group] Inline suggestions disabled
+                          #108 [Button] Inline suggestions disabled (bounds: [1364,830,34,31], focusable)
+                        - [Group] TypeScript
+                          #109 [Button] TypeScript (bounds: [1278,830,77,31], focusable)
+                        - [Group] Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier, next: $(copilot) No inline suggestion available, Inline suggestions
+                          #110 [Button] Editor Language Status: tsconfig.json, next: 6.0.0-dev.20260416, TypeScript version, next: Prettier, next: $(copilot) No inline suggestion available, Inline suggestions (bounds: [1251,830,29,31], focusable)
+                        - [Group] CRLF
+                          #111 [Button] CRLF (bounds: [1196,830,47,31], focusable)
+                        - [Group] UTF-8
+                          #112 [Button] UTF-8 (bounds: [1138,830,53,31], focusable)
+                        - [Group] Spaces: 2
+                          #113 [Button] Spaces: 2 (bounds: [1057,830,75,31], focusable)
+                        - [Group] Ln 20, Col 1
+                          #114 [Button] Ln 20, Col 1 (bounds: [961,830,91,31], focusable)
+                      - [Text]
+                        - [Text] logLevel?: string | undefined | null, - Logging level (e.g., 'info', 'debug', 'warn', 'error'). Falls back to RUST_LOG or TERMINATOR_LOG_LEVEL env vars, defaults to 'info'., Create a new Desktop automation instance with configurable options. *@returns* — A new Desktop automation instance., hint
+                      - [Text]
+                      - [Group]
+                      - [Group]
+                        - [Text] Copied to clipboard
+              - [Pane]
