@@ -5,7 +5,12 @@ import { geminiModel } from "./src/model";
 import z from "zod";
 import robot from "robotjs";
 
+const delay = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
+
 for (let step = 1; step <= 3; step++) {
+  await delay(2000);
+
   console.log(`\n--- Step ${step}/3 ---`);
 
   const { formatted } = desktop.getWindowTreeResult("Code", undefined, {
@@ -18,14 +23,45 @@ for (let step = 1; step <= 3; step++) {
 
   const result = await generateText({
     model: geminiModel,
-    prompt: `Install thunder client.`,
-    instructions: `UI Elements: ${formatted}. Give the name and role of the element. Don't include shortcuts. Always use Pascal casing for role. Also give the proper step intent. If the element is not present in the ui tree, don't guess. If element does not have bounds, or many elements have same role and name, return the appropriate listitem name or other things. We can fetch the bounds with it. Understand ui and take proper steps. Shortest path.`,
+    prompt: `Click on thunder client, new request and login. Current step: ${step}/3.`,
+    instructions: `
+You are a desktop UI automation agent.
+
+UI Elements:
+${formatted}
+
+Determine the SINGLE next action required to install Thunder Client.
+
+ACTION RULES:
+1. Use "click" when the next step requires clicking a button, tab, menu item, input field, extension result, or Install button.
+2. Use "type" when the next step requires entering text into an already-focused input field.
+3. When the VS Code Extensions search input is already focused and the search query has not been entered, use:
+   type: "type"
+   text: "Thunder Client"
+4. Do NOT return "click" repeatedly when text needs to be entered.
+5. After clicking the Extensions icon, inspect the updated UI tree to determine whether the search input needs to be clicked or is already focused.
+6. If the search input is not focused, click it first. On a later step, type "Thunder Client".
+7. After search results appear, identify the actual Thunder Client extension and click its Install button.
+8. If the extension is already installed, identify the appropriate completion state. Do not invent UI elements.
+9. Never guess an element that is absent from the UI tree.
+10. Return the exact element role and name from the UI tree. Do not include keyboard shortcuts.
+11. Use PascalCase for the role, such as Button, Text, ListItem, or TextBox.
+12. If multiple elements share the same role and name, use a more specific element name when available.
+13. Select the shortest valid next action.
+
+Return:
+- intent: a short description of the next action.
+- role: the target element's role.
+- name: the target element's exact name.
+- action.requiresAction: true if an action is needed.
+- action.type: "click" or "type".
+- action.text: the exact text to enter, required only for "type".
+`,
     output: Output.object({
       schema: z.object({
         intent: z.string(),
         role: z.string(),
         name: z.string(),
-
         action: z.discriminatedUnion("type", [
           z.object({
             requiresAction: z.boolean(),
@@ -41,30 +77,43 @@ for (let step = 1; step <= 3; step++) {
     }),
   });
 
-  console.log(result.output);
+  console.log("Intent:", result.output.intent);
+  console.log("Target:", {
+    role: result.output.role,
+    name: result.output.name,
+  });
+  console.log("Action:", result.output.action);
 
   if (result.output.action.requiresAction) {
     const selector = `role:${result.output.role} && text:${result.output.name}`;
+
     const app = await desktop.getCurrentApplication();
     const element = await app.locator(selector).first(1000);
+
     const { x, y, width, height } = element.bounds();
 
-    const xPercentage = 50;
-    const yPercentage = 50;
+    const targetX = Math.round(x + width / 2);
+    const targetY = Math.round(y + height / 2);
 
-    const targetX = Math.round(x + (width * xPercentage) / 100);
-    const targetY = Math.round(y + (height * yPercentage) / 100);
     switch (result.output.action.type) {
-      case "click":
+      case "click": {
         robot.moveMouseSmooth(targetX, targetY);
         robot.mouseClick();
         console.log("Clicked:", result.output.name);
         break;
-      case "type":
+      }
+
+      case "type": {
         robot.moveMouseSmooth(targetX, targetY);
         robot.mouseClick();
+
         await app.typeText(result.output.action.text);
+
+        console.log("Typed:", result.output.action.text);
+        break;
+      }
     }
   }
+
   console.log("Input tokens:", result.usage.inputTokens);
 }
